@@ -1,0 +1,242 @@
+/*——————————————————————
+[Table of contents]
+
+1. Body / body
+
+2. Header / #header
+
+3. Hero / .hero
+
+4. Content / .content
+
+5. Benefits / .benefits
+
+6. Footer / .footer
+
+——————————————————————-*/
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}/*Universal selectors*/
+
+
+/*
+*******
+Body
+*******
+*/
+body {
+    background-color: #d9dcd6; 
+}/*Colour of background for webpage*/
+
+
+/*
+*******
+Header
+*******
+*/
+.header {
+    padding: 20px;
+    font-family: 'Times New Roman', Times, serif; 
+    background-color: #dfb095; 
+    border: 2px solid #8d8d8d;
+}
+/*Header box formating.*/
+
+.header h1 {
+    display: inline-block;
+    color: #000000;
+    font-size: 50px; 
+}
+/*Company Name Formating for Header h1*/
+
+.header h1 span:hover{
+    cursor: grab;
+    text-decoration: underline;
+    position:relative;
+    background-size: 2%;
+}
+
+.header h1 .seo {
+    color: #000000; 
+}
+/*Company name font colour for Header h1*/
+
+.header div {
+    padding-top: 15px; 
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+    font-size: 30px;
+}
+/*Formatting for class=header div section*/
+
+.header div ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+/*Formatting for header div ul li (links)*/
+
+a {
+    color: #000000; 
+    text-decoration: none;
+}
+/*Formatting for a*/
+
+p {
+    font-size: 20px;
+}
+/*Formatting for p*/
+
+@media screen and (max-width: 985px) {
+    main,
+    nav,
+    .header div {
+        display:none;
+    }
+}
+
+/*
+*******
+Hero
+*******
+*/
+
+/* hero background image */
+.bgimage {
+    background-size: cover;
+    border: 1.5px solid #8d8d8d;
+    background-position: center;
+}
+/* text css above hero image*/
+.hero_title {
+    font-size: 4.5rem;
+}
+.hero_desc {
+    font-size: 2rem;
+}
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+/*
+*******
+Content
+*******
+*/
+.content {
+    width: 75%;
+    display: inline;
+    margin-left: 20px;
+}
+/*Positioning of class=content*/
+
+.about-me {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+}
+/*class=content div class=about-me text formatting*/
+
+.work {
+    margin-bottom: 25px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+}
+/*class=content div class=online-reputation-management text formatting*/
+
+.contact-me {
+    margin-bottom: 25px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+}
+/*class=content div class=online-reputation-management text formatting*/
+
+.resume {
+    margin-bottom: 25px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+}
+/*class=content div class=socal-media-marketing text formatting*/
+
+.about-me img {
+    max-height: 100px;
+}
+/*class=content div class=search-engine-optimization img pixel height*/
+
+.work img {
+    max-height: 200px;
+}
+/*class=content div class=online-reputation-management img pixel height*/
+
+.contact-me img {
+    max-height: 200px;
+}
+/*class=content div class=online-reputation-management img pixel height*/
+
+.resume img {
+    max-height: 200px;
+}
+/*class=content div class=social-media-marketing img pixel height*/
+
+.about-me h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+/*class=content div class=search-engine-optimization h2 margin and font size*/
+
+.work h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+/*class=content div class=online-reputation-management h2 margin and font size*/
+
+.contact-me h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+/*class=content div class=online-reputation-management h2 margin and font size*/
+
+.resume h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+/*class=content div class=social-media-marketing h2 margin and font size*/
+
+/*
+*******
+Footer
+*******
+*/
+.footer {
+    padding: 30px;
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+/*Footer padding, font family and text align*/
+
+.footer h2 {
+    font-size: 20px;
+}
+/*Footer h2 font size*/
