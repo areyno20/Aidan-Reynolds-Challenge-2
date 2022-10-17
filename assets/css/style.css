@@ -39,39 +39,38 @@ Header
 */
 .header {
     padding: 20px;
-    font-family: 'Times New Roman', Times, serif; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
     background-color: #dfb095; 
     border: 2px solid #8d8d8d;
 }
 /*Header box formating.*/
 
 .header h1 {
+    padding-top: 5px;
     display: inline-block;
     color: #000000;
-    font-size: 50px; 
+    font-size: 40px; 
+    text-shadow: 1px 2px #8e8787;
 }
 /*Company Name Formating for Header h1*/
 
-.header h1 span:hover{
-    cursor: grab;
-    text-decoration: underline;
-    position:relative;
-    background-size: 2%;
-}
-
-.header h1 .seo {
-    color: #000000; 
-}
-/*Company name font colour for Header h1*/
-
 .header div {
-    padding-top: 15px; 
+    padding-top: 10px; 
     margin-right: 20px;
     float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
     font-size: 30px;
+    text-shadow: 1px 2px #8e8787;
 }
 /*Formatting for class=header div section*/
+
+.header div ul li a:hover{
+    cursor: grab;
+    position:relative;
+    background-size: 2%;
+    border-bottom:2px dotted #999;
+}
+/*Hover function for class=header div (links)*/
 
 .header div ul li {
     display: inline-block;
@@ -90,7 +89,7 @@ p {
 }
 /*Formatting for p*/
 
-@media screen and (max-width: 985px) {
+@media screen and (max-width: 1020px) {
     main,
     nav,
     .header div {
@@ -103,17 +102,20 @@ p {
 Hero
 *******
 */
-
-/* hero background image */
 .bgimage {
     background-size: cover;
     border: 1.5px solid #8d8d8d;
     background-position: center;
+    width:100%;
+    height:auto;
 }
-/* text css above hero image*/
+/* hero background image */
+
 .hero_title {
     font-size: 4.5rem;
 }
+/* text css above hero image*/
+
 .hero_desc {
     font-size: 2rem;
 }
@@ -123,7 +125,45 @@ Hero
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
+    color: rgb(255, 255, 255);
+    text-shadow: 3px 2px #000000;
+    font-family: sans-serif; 
+}
+
+@media screen and (max-height: 410px) {
+    main,
+    nav,
+    .hero_title {
+        display:none;
+    }
+    .hero_desc {
+        display:none;
+    }
+}
+@media screen and (max-width: 900px) {
+    main,
+    nav,
+    .hero_title {
+        font-size: 2.5rem;
+    }
+    .hero_desc {
+        font-size: 1rem;
+    }
+    .hero-text {
+        top: 35%;
+        left: 50%;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    main,
+    nav,
+    .hero_title {
+        display:none;
+    }
+    .hero_desc {
+        display:none;
+    }
 }
 
 /*
@@ -162,7 +202,7 @@ Content
 .contact-me {
     margin-bottom: 25px;
     padding: 50px;
-    height: 300px;
+    height: 200px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #ffffff;
     color: #000000;
@@ -172,71 +212,112 @@ Content
 .resume {
     margin-bottom: 25px;
     padding: 50px;
-    height: 300px;
+    height: 700px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #ffffff;
     color: #000000;
 }
-/*class=content div class=socal-media-marketing text formatting*/
+/*class=content div class=resume text formatting*/
 
 .about-me img {
     max-height: 100px;
 }
-/*class=content div class=search-engine-optimization img pixel height*/
+/*class=content div class=about-me img pixel height*/
 
 .work img {
     max-height: 200px;
 }
-/*class=content div class=online-reputation-management img pixel height*/
+/*class=content div class=work img pixel height*/
 
 .contact-me img {
     max-height: 200px;
 }
-/*class=content div class=online-reputation-management img pixel height*/
-
-.resume img {
-    max-height: 200px;
-}
-/*class=content div class=social-media-marketing img pixel height*/
+/*class=content div class=contact-me img pixel height*/
 
 .about-me h2 {
     margin-bottom: 20px;
-    font-size: 36px;
+    font-size: 50px;
 }
-/*class=content div class=search-engine-optimization h2 margin and font size*/
+/*class=content div class=about-me h2 margin and font size*/
 
 .work h2 {
     margin-bottom: 20px;
-    font-size: 36px;
+    font-size: 50px;
 }
-/*class=content div class=online-reputation-management h2 margin and font size*/
+/*class=content div class=work h2 margin and font size*/
 
 .contact-me h2 {
     margin-bottom: 20px;
-    font-size: 36px;
+    font-size: 50px;
 }
-/*class=content div class=online-reputation-management h2 margin and font size*/
+/*class=content div class=contact-me h2 margin and font size*/
 
 .resume h2 {
     margin-bottom: 20px;
-    font-size: 36px;
+    font-size: 50px;
 }
-/*class=content div class=social-media-marketing h2 margin and font size*/
+/*class=content div class=resume h2 margin and font size*/
+
+.resumedoc {
+    position:center;
+    margin-left: 200px;
+    border: 2px solid #8d8d8d;;
+    box-shadow: 1px 1px 0 0 rgba(255, 255, 255, 0.1);
+
+}
 
 /*
 *******
 Footer
 *******
-*/
-.footer {
-    padding: 30px;
-    clear: both;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align: center;
-}
-/*Footer padding, font family and text align*/
+@import url(https://fonts.googleapis.com/css?family=Alegreya+Sans:300);
 
-.footer h2 {
-    font-size: 20px;
+body {
+    font-family: 'Alegreya Sans', sans-serif;
+}  
+  /* Sticky footer style and color
+  -------------------------------------------------- */
+footer {
+    padding-top: 20px;
+    background-color:#ffffff;
+    color: rgb(0, 0, 0);
 }
-/*Footer h2 font size*/
+  
+.footer-content h5 {
+    position:left;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+footer a {
+    color: #999;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    text-decoration:none;
+}
+  
+footer a:hover, footer a:focus {
+    color: #aaa;
+    border-bottom:1px dotted #999;
+}
+  
+footer .form-control {
+      background-color: #ffffff;
+      box-shadow: 1px 1px 0 0 rgba(255, 255, 255, 0.1);
+      border: 1px;
+      resize:both;
+      color: #d1d2d2;
+      padding: 0.7em 1em;
+      size: 25%;
+  }
+
+footer .contact-me-box {
+    border-style:solid;
+    border-radius: 2%;
+    border-color: #8d8d8d;
+    box-sizing: 25%;
+}
+
+footer .form {
+    size:25%
+}
