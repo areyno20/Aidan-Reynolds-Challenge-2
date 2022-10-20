@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <div class="header">
+    <header class="header">
         <h1>Aidan Reynolds</h1>
         <div>
             <ul>
@@ -27,9 +27,8 @@
                 </li>
             </ul>
         </div>
-    </div>
+    </header>
 
-    
     <!-- main banner -->
     <section class="hero" id="home">
         <div class="container-fluid">
@@ -44,7 +43,7 @@
     </section>
 
 
-    <div class="content">
+    <main class="content">
         <div id="about-me" class="about-me">
             <h2>About Me</h2>
             <p>
@@ -57,20 +56,30 @@
                
             </p>
         </div>
-        <div id="contact-me" class="contact-me">
-            <h2>Contact Me</h2>
-            <ul class="contact-info">
-                <a>+13433639276</a>
-                <a>aidanreynolds715@gmail.com</a>
-                <a href="#contact-me-box">Contact Through Webpage</a>
-            </ul>
-        </div>
         <div id="resume" class="resume">
             <h2>Resume</h2>
             <!--<img src="./assets/images/resume.png" class="resumeimg" />-->
             <embed class=resumedoc src="./assets/documents/Aidan Reynolds Resume.pdf"/>
         </div>
-    </div>
+        <div id="contact-me" class="contact-me">
+            <h2>Contact Me</h2>
+            <ul class="contact-info">
+                <div id="contact-me-box" class="contact-me-box">
+                    <form>
+                        <fieldset class="form-group">
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                        </fieldset>
+                        <fieldset class="form-group">
+                            <textarea class="form-control" id="exampleMessage" placeholder="Message"></textarea>
+                        </fieldset>
+                        <fieldset class="form-group text-xs-right">
+                            <button type="button" class="btn btn-secondary-outline btn-lg">Send</button>
+                        </fieldset>
+                    </form>
+                </div>
+            </ul>
+        </div>
+</main>
       
     <footer class="footer">
         <div class="container">
@@ -87,21 +96,8 @@
                                 <li><a href="">Spotify</a></li>
                             </ul>
                         </div>
-                    <h5>Contact Me Via Webpage</h5>
-                        <div id="contact-me-box" class="contact-me-box">
-                            <form>
-                                <fieldset class="form-group">
-                                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-                                </fieldset>
-                                <fieldset class="form-group">
-                                    <textarea class="form-control" id="exampleMessage" placeholder="Message"></textarea>
-                                </fieldset>
-                                <fieldset class="form-group text-xs-right">
-                                    <button type="button" class="btn btn-secondary-outline btn-lg">Send</button>
-                                </fieldset>
-                            </form>
-                        </div>
-                </div>
+                    </div>
+                </div>    
             </div>    
         </div>
     </footer>

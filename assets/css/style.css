@@ -66,7 +66,7 @@ Header
     background-color: #dfb095; 
     border: 2px solid var(--border-one);
 }
-/*Header box formating.*/
+
 
 .header h1 {
     padding-top: 5px;
@@ -75,7 +75,7 @@ Header
     font-size: 40px; 
     text-shadow: 1px 2px var(--textshadow);
 }
-/*Company Name Formating for Header h1*/
+
 
 .header div {
     padding-top: 10px; 
@@ -85,7 +85,12 @@ Header
     font-size: 30px;
     text-shadow: 1px 2px var(--textshadow);
 }
-/*Formatting for class=header div section*/
+
+
+.header div ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
 
 .header div ul li a:hover{
     cursor: grab;
@@ -93,24 +98,11 @@ Header
     background-size: 2%;
     border-bottom:2px dotted #999;
 }
-/*Hover function for class=header div (links)*/
 
-.header div ul li {
-    display: inline-block;
-    margin-left: 25px;
-}
-/*Formatting for header div ul li (links)*/
-
-a {
+.header div ul li a {
     color: #000000; 
     text-decoration: none;
 }
-/*Formatting for a*/
-
-p {
-    font-size: 20px;
-}
-/*Formatting for p*/
 
 @media screen and (max-width: 1020px) {
     main,
@@ -197,104 +189,29 @@ Content
 .content {
     width: 75%;
     display: inline;
-    margin-left: 20px;
+    margin-left: 1rem;
 }
-/*Positioning of class=content*/
+
+.content div{
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    font-family: var(--contentfontfamily);
+    text-shadow: 1px 2px var(--textshadow);
+    background-color:var(--contentbackground);
+    color:var(--contenttextcolour);
+    border: 2px solid var(--border-one);
+    box-shadow: 0 3px 10px var(--background);
+}
 
 .content h2 {
+    margin-left: 1rem;
     margin-bottom: 20px;
     font-size: 35px;
- }
-/*class=content h2 margin and font size*/
-
-.about-me h2{
+    position: absolute;
     border-left: 2px dotted #000;
     height: 20%;
-    position: absolute;
 }
-
-.work h2{
-    border-left: 2px dotted #000;
-    height: 20%;
-    position: absolute;
-}
-
-.contact-me h2{
-    border-left: 2px dotted #000;
-    height: 10%;
-    position: absolute;
-}
-
-.resume h2{
-    border-left: 2px dotted #000;
-    height: 65%;
-    position: absolute;
-}
-
-.about-me {
-    margin-top: 25px;
-    margin-bottom: 25px;
-    padding: 50px;
-    height: 300px;
-    font-family: var(--contentfontfamily);
-    text-shadow: 1px 2px var(--textshadow);
-    background-color: var(--contentbackground);
-    color: var(--contenttextcolour);
-    border: 2px solid var(--border-one);
-    box-shadow: 1px 5px 0 0 rgba(255, 255, 255, 0.1);
-}
-/*class=content div class=about-me text formatting*/
-
-.work {
-    margin-bottom: 25px;
-    padding: 50px;
-    height: 300px;
-    font-family: var(--contentfontfamily);
-    text-shadow: 1px 2px var(--textshadow);
-    background-color:var(--contentbackground);
-    color:var(--contenttextcolour);
-    border: 2px solid var(--border-one);
-}
-/*class=content div class=online-reputation-management text formatting*/
-
-.contact-me {
-    margin-bottom: 25px;
-    padding: 50px;
-    height: 200px;
-    font-family: var(--contentfontfamily);
-    text-shadow: 1px 2px var(--textshadow);
-    background-color:var(--contentbackground);
-    color:var(--contenttextcolour);
-    border: 2px solid var(--border-one);
-}
-/*class=content div class=contact-me text formatting*/
-
-.contact-info a {
-    position: static;
-    margin-left: 20%;
-    margin-top: 1%;
-}
-
-
-.content .contact-me p:hover{
-    cursor: grab;
-    position:relative;
-    background-size: 2%;
-    text-shadow: 2px 1px #ffffff;
-   }
-/*Hover function for class=header div (links)*/
-
-.resume {
-    margin-bottom: 25px;
-    padding: 50px;
-    height: 700px;
-    font-family: var(--contentfontfamily);
-    text-shadow: 1px 2px var(--textshadow);
-    background-color:var(--contentbackground);
-    color:var(--contenttextcolour);
-    border: 2px solid var(--border-one);
-}
-/*class=content div class=resume text formatting*/
 
 .resumedoc {
     width:80%;
@@ -306,11 +223,46 @@ Content
     box-shadow: 1px 1px 0 0 rgba(255, 255, 255, 0.1);
 }
 
-/*
-.resumeimg{
-    background-size: cover;
+
+.contact-info form {
+    text-align: center;
+    padding: 1rem;
+    position: center;
+    margin-right: 200px;
+    margin-left: 200px;
+    size: 5%;
+
 }
-*/
+
+.contact-me-box {
+    border-style:double;
+    border-radius: 2%;
+    border-color: #aeaeae;
+    box-sizing: 50%;
+    margin-left: 500px;
+    margin-right: 500px;
+    margin-top: 50px;
+    position:absolute;
+}
+
+/* Content Category section sizes*/
+.about-me {
+    height: 300px;
+}
+
+.work {
+    height: 300px;
+}
+
+.resume {
+    height: 700px;
+}
+
+.contact-me {
+    height: 300px;
+}
+
+/* **** */
 
 @media screen and (max-width: 600px) {
     main,
@@ -331,13 +283,7 @@ Content
 *******
 Footer
 *******
-@import url(https://fonts.googleapis.com/css?family=Alegreya+Sans:300);
-
-body {
-    font-family: 'Alegreya Sans', sans-serif;
-}  
-  /* Sticky footer style and color
-  -------------------------------------------------- */
+*/
 footer {
     padding-top: 20px;
     background-color:#ffffffbd;
@@ -371,14 +317,3 @@ footer .form-control {
       padding: 0.7em 1em;
       size: 25%;
   }
-
-footer .contact-me-box {
-    border-style:solid;
-    border-radius: 2%;
-    border-color: #8d8d8d;
-    box-sizing: 25%;
-}
-
-footer .form {
-    size:25%
-}
