@@ -125,6 +125,12 @@ Hero
 }
 /* hero background image */
 
+.myfaceimg{
+    margin-top:50px;
+    width:50%;
+    height: auto;
+}
+
 .hero_title {
     font-size: 4.5rem;
 }
@@ -136,7 +142,7 @@ Hero
 .hero-text {
     text-align: center;
     position: absolute;
-    top: 50%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: rgb(255, 255, 255);
@@ -217,17 +223,19 @@ Content
 }
 
 .about-me {
-    text-align:center;
-    display:block;
+    display:flex;   
 }
 
 .about-me div{
-    border: none;    
+    border: none;   
+    align-items: left;      
 }
 
-.about-me img{
-    width:20%;
-    height: auto;
+.about-me p {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top:50px;
+    text-align: left;
 }
 
 .resumedoc {
