@@ -418,6 +418,7 @@ Content
     .contact-me h2{
         border-left: 2px dotted #000;
         height: 10%;
+    }
 }
 
 /*
@@ -425,7 +426,7 @@ Content
 Footer
 *******
 */
-footer {
+.footer {
     padding-top: 20px;
     background-color:#ffffff;
     color: rgb(0, 0, 0);
@@ -440,7 +441,7 @@ footer {
     text-align: center;
 }
 
-footer a {
+.footer a {
     color: rgb(0, 0, 0);
     margin:auto;
     text-decoration:none;
@@ -448,7 +449,7 @@ footer a {
     text-align: center;
 }
   
-footer a:hover, footer a:focus {
+.footer a:hover, footer a:focus {
     color: #aaa;
     border-bottom:1px dotted #999;
 }
