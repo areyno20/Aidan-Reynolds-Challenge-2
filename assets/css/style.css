@@ -290,13 +290,13 @@ Content
     font-size: 2vw;
 }
 
-.button p {
+/* .button p {
     padding: 2px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background: #000000;
     color: rgb(150, 139, 139);
     font-size: 1vw;
-}
+} */
 
 
 .button:hover{
