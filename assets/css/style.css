@@ -273,25 +273,25 @@ Content
 
 .button {
     flex: 1 1 100px;
-    padding: 40px;
+    padding: 10px;
     margin-top:50px;
     margin-left:50px;
     text-align: left;
     border-style: solid;
     border-width: 1px;
     background-image: url("../images/workimg.jpeg");
+    align-content: center;
 }
 
 .button a {
     padding: 10px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background: #000000;
     color: #fff;
     font-size: 2vw;
 }
 
 .button p {
-    padding: 10px;
+    padding: 2px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background: #000000;
     color: rgb(150, 139, 139);
