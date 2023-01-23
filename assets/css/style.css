@@ -125,11 +125,6 @@ Hero
 }
 /* hero background image */
 
-.myfaceimg{
-    margin-top:50px;
-    width:50%;
-    height: auto;
-}
 
 .hero_title {
     font-size: 3rem;
@@ -146,7 +141,7 @@ Hero
     left: 50%;
     transform: translate(-50%, -50%);
     color: rgb(255, 255, 255);
-    text-shadow: 3px 2px #000000;
+    text-shadow: 2px 1px #000000;
     font-family: sans-serif; 
 }
 
