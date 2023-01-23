@@ -242,23 +242,6 @@ Content
     height: 20%;
 }
 
-.about-me {
-    display:flex;   
-}
-
-.about-me div{
-    border: none;   
-    align-items: left;      
-}
-
-.about-me p {
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-top:50px;
-    text-align: left;
-    font-size: 1.5vw;
-}
-
 .work-buttons {
     display: flex;
     flex-wrap: wrap;
@@ -359,7 +342,7 @@ Content
 }
 
 .contact-me {
-    height: 500px;
+    height: auto;
     position:center;
 }
 
@@ -403,9 +386,6 @@ Content
         border-left: 2px dotted #000;
         height: 10%;
     }
-    .contact-me-box {
-    display:none;
-    }
     .contact-me {
         height: 200px;
         position:center;
@@ -422,29 +402,18 @@ Footer
 *******
 */
 .footer {
-    padding-top: 20px;
-    background-color:#ffffff;
     color: rgb(0, 0, 0);
-    display:inline-flexbox;
     text-align: center;
 }
 
 .footer-content h5 {
     position:left;
-    margin-bottom: 5px;
-    margin-top: 10px;
     text-align: center;
 }
 
 .footer a {
-    color: rgb(0, 0, 0);
     margin:auto;
     text-decoration:none;
     display:inline;
     text-align: center;
-}
-  
-.footer a:hover, footer a:focus {
-    color: #aaa;
-    border-bottom:1px dotted #999;
 }
