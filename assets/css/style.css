@@ -154,7 +154,7 @@ Hero
     }
 }
 
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1050px){
     main,
     nav,
     .hero_title {
@@ -165,6 +165,13 @@ Hero
     }
 }
 
+@media screen and (max-height: 600px) {
+    main,
+    nav,
+    .myfaceimg {
+        display: none;
+       }
+}
 
 @media screen and (max-width: 900px) {
     main,
