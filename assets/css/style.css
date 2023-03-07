@@ -280,7 +280,7 @@ Content
 .button:hover{
     cursor: grab;
     position:relative;
-    background-size: 80%;
+    background-size: 95%;
     border:3px solid #999;
 }
 
